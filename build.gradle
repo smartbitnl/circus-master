@@ -7,8 +7,8 @@ luci {
         zetta {
             // username and password read from ~/.luci/settings.properties
             // can alternatively be specified here
-            username = 'user1'
-            password = 'password1'
+            username = 'user15'
+            password = 'password15'
             domainId = '807427196c02496ea86bc65a110472e6'
             tenantName = 'Circus'
         }
@@ -50,6 +50,10 @@ luci {
                 }
 
                 staticSlave('worker3') {
+                    dockerImage = slaveImage
+                }
+                
+                staticSlave('worker4') {
                     dockerImage = slaveImage
                 }
             }
